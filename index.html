@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Practice</title>
+        <link rel="stylesheet" href="./style.css">
+        <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>Table Entry Task</h1>
+        <fieldset>
+            <legend>Entry System</legend>
+            <form action="#" id="form">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Name</label>
+                            <span>*</span>
+                        </td>
+                        <td>
+                            <input type="text" id="name" placeholder="Enter Your Name Here...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="age">Age</label>
+                            <span>*</span>
+                        </td>
+                        <td>
+                            <input type="number" id="age" placeholder="Enter Your Age Here...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dept">Department</label>
+                            <span>*</span>
+                        </td>
+                        <td>
+                            <input type="text" id="dept" placeholder="Enter Your Departmenet Here...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail">E-mail</label>
+                        </td>
+                        <td>
+                            <input type="email" id="mail" placeholder="Enter Your E-mail Here...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="addEntry" type="submit">Add Entry</button>
+                        </td>
+                        <td>
+                            <button type="reset" id="resetEntry">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <h2>Entries Table</h2>
+        <table class="entriesTable">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="entriesList"></tbody>
+        </table>
+    </div>
+</body>
+</html>
