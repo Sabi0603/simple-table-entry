@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -10,21 +11,30 @@ body{
 
 .container{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px 0;
 }
 
 .container h1{
     text-align: center;
     padding-top: 20px;
     color: blue;
+    font-size: 2rem;
 }
 
 .container fieldset{
-    width: fit-content;
-    padding: 20px 10px;
+    width: 90%;     
+    max-width: 500px;
+    padding: 20px;
     margin: 20px auto;
     font-size: 1.2rem;
     border: 2px solid grey;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.container table{
+    width: 100%;
 }
 
 fieldset legend{
@@ -38,8 +48,8 @@ fieldset input{
     margin-top: 10px;
     padding: 5px;
     outline: none;
-    width: 300px;
-    margin-left: 10px;
+    width: 100%;
+    margin-left: 0;
     cursor: pointer;
 }
 
@@ -56,22 +66,39 @@ fieldset button{
     padding: 10px 20px;
     margin-top: 10px;
     cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+fieldset button:hover{
+    background-color: black;
+    color: white;
 }
 
 h2{
     text-align: center;
     color: blue;
+    margin-top: 30px;
+}
+
+.table_Container{
+    overflow-x: auto;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .entriesTable{
     border-collapse: collapse;
-    margin: 20px auto;
+    width: 100%;
+    min-width: 600px; 
 }
 
 .entriesTable th{
     background-color: gray;
     color: white;
     text-shadow: 0px 0px 2px black;
+    padding: 8px 12px;
+    text-align: center;
 }
 
 .entriesTable th, .entriesTable td{
@@ -87,7 +114,29 @@ h2{
     border: 1px solid black;
     width: 100%;
     padding: 5px;   
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: red;
     color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.entriesTable button:hover{
+    background-color: darkred;
+}
+
+@media screen and (max-width:600px){
+    fieldset{
+        width: 95%;
+        padding: 15px;
+    }
+
+    .entriesTable th, .entriesTable td{
+        padding: 5px 8px;
+        font-size: 0.9rem;
+    }
+
+    fieldset button{
+        font-size: 1rem;
+    }
 }

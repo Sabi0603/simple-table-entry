@@ -64,7 +64,8 @@ entry_addbtn.onclick = function(){
     delbtn_td.textContent = "Delete";
     del_td.appendChild(delbtn_td);
     tr.appendChild(del_td);
-
+    
+    entries_list.appendChild(tr);
     tr.children[0].style.textAlign = "center";
     tr.children[2].style.textAlign = "center";
 
@@ -74,7 +75,6 @@ entry_addbtn.onclick = function(){
         rows.forEach((row, index) => {row.children[0].textContent = index + 1});
     };
 
-    entries_list.appendChild(tr);
 
     alert("Entries Added");
     

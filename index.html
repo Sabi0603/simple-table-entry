@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DOM Practice</title>
+        <title>Table Entry Task</title>
         <link rel="stylesheet" href="./style.css">
         <script defer src="./script.js"></script>
 </head>
@@ -51,7 +51,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <button id="addEntry" type="submit">Add Entry</button>
+                            <button type="button" id="addEntry">Add Entry</button>
                         </td>
                         <td>
                             <button type="reset" id="resetEntry">Reset</button>
@@ -61,19 +61,21 @@
             </form>
         </fieldset>
         <h2>Entries Table</h2>
-        <table class="entriesTable">
-            <thead>
-                <tr>
-                    <th>S.No</th>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Department</th>
-                    <th>Email</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody id="entriesList"></tbody>
-        </table>
+        <div class="table_Container">
+            <table class="entriesTable">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="entriesList"></tbody>
+            </table>            
+        </div>
     </div>
 </body>
 </html>
